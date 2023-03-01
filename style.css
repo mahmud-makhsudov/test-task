@@ -1,0 +1,153 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.config {
+  padding: 30px;
+  background-color: #ebebeb;
+}
+
+.config-title {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.config-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.config-visual {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+
+.config-visual-img {
+  max-width: 200px;
+  text-align: center;
+}
+
+.config-visual-img:not(:first-child) {
+  margin-left: 30px;
+}
+
+.config-visual-img img {
+  width: 100%;
+}
+
+.config-settings {
+  margin-left: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.config-settings-title-wrap {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.config-settings-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 40px;
+  flex-basis: 30%;
+  text-align: right;
+}
+
+.config-settings-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.config-settings-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.config-settings-item-select {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.config-settings-item-select select {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  -webkit-appearance: none; 
+  appearance: none !important;
+  outline: none;
+}
+
+.flip{
+  transform: scaleX(-1);
+}
+@media (max-width: 930px) {
+  .config-settings-title {
+    flex-basis: 100%;
+    text-align: right;
+  }
+  .config-settings-item-select {
+    flex-basis: 40%;
+  }  
+}
+@media (max-width: 570px) {
+  .config {
+    padding: 20px;
+  }
+  .config-title {
+    font-size: 25px;
+  }
+  .config-settings-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .config-visual-img-text {
+    font-size: 15px;
+  }
+  .config-settings-item-title, .config-settings-item-select {
+    font-size: 14px;
+  }
+  .config-settings-item:not(:first-child) {
+    margin-top: 10px;
+  }
+  .config-settings-item-select {
+    flex-basis: auto;
+    margin-left: 10px;
+  }
+  .config-settings-item {
+    justify-content: center;
+  }
+  .config-settings-title {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .config-inner {
+    flex-direction: column;
+  }
+  .config-settings {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .config-visual-img {
+    max-width: 100px;
+  }
+  .config-visual {
+    justify-content: center;
+  }
+  .config-title {
+    text-align: center;
+  }
+}
